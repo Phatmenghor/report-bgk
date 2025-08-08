@@ -1,5 +1,5 @@
 server:
-  port: 9010
+  port: 6000
 
 spring:
   application:
@@ -27,7 +27,8 @@ spring:
             use_jdbc_metadata_defaults: false
 
   datasource:
-    url: jdbc:postgresql://192.168.103.106:5432/camdx_db
+#    url: jdbc:postgresql://192.168.103.106:5432/camdx_db
+    url: jdbc:postgresql://192.168.101.5:5432/camdx_db
     username: postgres
     password: 123cp!@#
     driver-class-name: org.postgresql.Driver
@@ -41,7 +42,8 @@ spring:
 # Use for get data staff by IdCard
     secondary:
       driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-      url: "jdbc:sqlserver://192.168.103.71:1433;databaseName=CPBHD;encrypt=true;trustServerCertificate=true"
+#      url: "jdbc:sqlserver://192.168.103.71:1433;databaseName=CPBHD;encrypt=true;trustServerCertificate=true"
+      url: "jdbc:sqlserver://10.18.1.150:1433;databaseName=CPBHD;encrypt=true;trustServerCertificate=true"
       username: cpb_int
       password: "123cp!@#"
       hikari:
